@@ -2,22 +2,22 @@
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    name: "Vitalina Kovbasiuk",
+    position: "Front-End Developer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Hello, I am a beginner full-stack developer. Motivated and ready to take on challenging tasks. I work well in a team and learn quickly. I have knowledge of Javascript, React, React Redux, HTML, CSS, SASS, Bootstrap, Webpack, GitHub. Responsible: stress-resistant, goal-oriented, sociable, capable of learning, active life position. I'm constantly interested in learning new technologies in web development. I will be glad if you consider my candidacy and we can discuss the details of the work. Sincerely, Vitalina!",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    name: "Oleksandr Barabash",
+    position: "Front-End Developer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Hello, I am studying Front End technologies. I have knowledge of HTML, CSS, JavaScript, React, React Redux. I will be glad if you consider my candidacy and we can discuss the details of the work. Sincerely, Oleksandr!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    name: "Alona Aliev",
+    position: "UI/UX Designer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },

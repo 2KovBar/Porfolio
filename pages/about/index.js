@@ -146,7 +146,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={2} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-2-[100px]">
-                  Years of wxperians
+                  Years of Experians
                 </div>
               </div>
               {/* clients */}
