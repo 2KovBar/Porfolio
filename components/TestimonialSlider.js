@@ -15,11 +15,11 @@ const testimonialData = [
       "Hello, I am studying Front End technologies. I have knowledge of HTML, CSS, JavaScript, React, React Redux. I will be glad if you consider my candidacy and we can discuss the details of the work. Sincerely, Oleksandr!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Alona Aliev",
+    image: "/Alona.png",
+    name: "Alona Aliyev",
     position: "UI/UX Designer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Hello, I’m young and talented UI/UX designer who strives to create the best user experience for people. Working throughout the entire design cycle for mobile applications (iOS/Android), responsive web sites, and SaaS systems following the Human-Centered Design approach. Happy to work on user research, wireframing, prototyping, branding, intuitive interfaces. My usual workflow - understand (user/brand), research, analyze, design, re-design, launch, analyze again.",
   },
 ];
 
