@@ -26,8 +26,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br />
-            <span className="text-accent">Digital Reality</span>
+            Turn ideas <br />
+            <span className="text-accent">Into Reality</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,9 +37,9 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est saepe
-            amet totam praesentium soluta voluptas iusto sed aliquam et tempora
-            quam eum obcaecati vel assumenda ad, fuga id dolorem nulla?
+            Passionate individuals always looking to work on end products that
+            develop sustainable and scalable social and technical systems to
+            create impact.
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
