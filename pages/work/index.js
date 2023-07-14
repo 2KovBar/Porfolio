@@ -22,7 +22,7 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              My work <span className="text-accent">.</span>
+              Examples of our <span className="text-accent"> work.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -31,10 +31,13 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Perferendis blanditiis omnis consequatur non quia illum, esse
-              adipisci dolores accusantium sit quaerat natus id odio aliquam
-              dolor! Tempora officiis assumenda temporibus.
+              Our portfolio showcases a diverse range of projects we have
+              successfully completed for our clients. Each project represents
+              our expertise, creativity, and commitment to delivering
+              high-quality solutions. These examples demonstrate our ability to
+              deliver successful projects across different industries and
+              domains. We take pride in our work and strive to exceed client
+              expectations with every project we undertake.
             </motion.p>
           </div>
           {/* slider */}

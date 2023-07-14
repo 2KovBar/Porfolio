@@ -16,7 +16,7 @@ const WorkSlider = () => {
         images: [
           {
             title: "title",
-            path: "/thumb5.jpg",
+            path: "/thumb11.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
@@ -40,7 +40,7 @@ const WorkSlider = () => {
         images: [
           {
             title: "title",
-            path: "/thumb11.jpg",
+            path: "/thumb5.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
@@ -93,7 +93,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[550px]"
+      className="h-[280px] sm:h-[510px]"
     >
       {workSlider.slides.map((slide, slideIndex) => {
         return (
@@ -103,14 +103,14 @@ const WorkSlider = () => {
                 return (
                   <div
                     key={imageIndex}
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group border border-[red] rounded-[10px]"
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       <Link href={image.url} rel="noopener noreferrer">
                         <Image
                           src={image.path}
                           width={450}
-                          height={290}
+                          height={380}
                           alt=""
                           priority={true}
                           onClick={() => handleImageClick(image.url)}
