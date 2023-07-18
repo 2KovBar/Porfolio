@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsArrowRight } from "react-icons/bs";
-import Link from "next/link";
 
 const WorkSlider = () => {
   const workSlider = {
