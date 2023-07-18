@@ -62,7 +62,7 @@ const WorkSlider = () => {
       },
     ],
   };
-  
+
   return (
     <Swiper
       spaceBetween={10}
@@ -83,13 +83,13 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group border border-[red] rounded-[10px]"
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group">
-                        <Image
-                          src={image.path}
-                          width={450}
-                          height={380}
-                          alt=""
-                          priority={true}
-             
+                      <Image
+                        src={image.path}
+                        width={450}
+                        height={380}
+                        alt=""
+                        priority={true}
+                      />
                       {/* overlay gradient */}
                       <div
                         className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0
