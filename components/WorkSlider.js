@@ -1,12 +1,13 @@
-import React from "react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import React, { useEffect } from "react";
+// import "swiper/css";
+// import "swiper/css/free-mode";
+// import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 const WorkSlider = () => {
   const workSlider = {
@@ -15,22 +16,22 @@ const WorkSlider = () => {
         images: [
           {
             title: "title",
-            path: "/thumb1.jpg",
+            path: "/thumb11.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
             title: "title",
-            path: "/thumb2.jpg",
+            path: "/thumb22.jpg",
             url: "https://oleksandrb93.github.io/weather/",
           },
           {
             title: "title",
-            path: "/thumb3.jpg",
+            path: "/thumb33.jpg",
             url: "https://chidorishar.github.io/Petly-Frontend",
           },
           {
             title: "title",
-            path: "/thumb4.jpg",
+            path: "/thumb44.jpg",
             url: "https://spotify-clone-red-chi.vercel.app/",
           },
         ],
@@ -39,12 +40,12 @@ const WorkSlider = () => {
         images: [
           {
             title: "title",
-            path: "/thumb4.jpg",
+            path: "/thumb5.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
             title: "title",
-            path: "/thumb1.jpg",
+            path: "/thumb6.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
@@ -61,7 +62,7 @@ const WorkSlider = () => {
       },
     ],
   };
-
+  
   return (
     <Swiper
       spaceBetween={10}
@@ -69,21 +70,26 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className="h-[280px] sm:h-[510px]"
     >
       {workSlider.slides.map((slide, slideIndex) => {
         return (
           <SwiperSlide key={slideIndex}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-1 gap-4 cursor-pointer">
               {slide.images.map((image, imageIndex) => {
                 return (
                   <div
                     key={imageIndex}
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group border border-[red] rounded-[10px]"
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group">
-                      <Image src={image.path} width={500} height={300} alt="" />
-
+                        <Image
+                          src={image.path}
+                          width={450}
+                          height={380}
+                          alt=""
+                          priority={true}
+             
                       {/* overlay gradient */}
                       <div
                         className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0

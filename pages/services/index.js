@@ -21,7 +21,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My service <span className="text-accent">.</span>
+              Our service <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -30,10 +30,10 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Perferendis blanditiis omnis consequatur non quia illum, esse
-              adipisci dolores accusantium sit quaerat natus id odio aliquam
-              dolor! Tempora officiis assumenda temporibus.
+              As a designer and developers, We understand the perfect user
+              interface should look good and work even better. Alongside our
+              clients, we uncover problems and solve them. In short, we create
+              bolder online experiences.
             </motion.p>
           </div>
           <motion.div
