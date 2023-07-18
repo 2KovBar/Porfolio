@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // import "swiper/css/free-mode";
 // import "swiper/css/pagination";
 import { Pagination } from "swiper";
-
+import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsArrowRight } from "react-icons/bs";
@@ -62,30 +62,7 @@ const WorkSlider = () => {
       },
     ],
   };
-
-  useEffect(() => {
-    const handleImagePreload = () => {
-      const images = document.querySelectorAll("img[loading='lazy']");
-      images.forEach((image) => {
-        if (image.complete) {
-          const link = document.createElement("link");
-          link.rel = "preload";
-          link.href = image.currentSrc;
-          link.as = "image";
-          document.head.appendChild(link);
-        }
-      });
-    };
-    window.addEventListener("load", handleImagePreload);
-    return () => {
-      window.removeEventListener("load", handleImagePreload);
-    };
-  }, []);
-
-  const handleImageClick = (url) => {
-    window.location.href = url;
-  };
-
+  
   return (
     <Swiper
       spaceBetween={10}
@@ -106,16 +83,13 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group border border-[red] rounded-[10px]"
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group">
-                      <Link href={image.url} rel="noopener noreferrer">
                         <Image
                           src={image.path}
                           width={450}
                           height={380}
                           alt=""
                           priority={true}
-                          onClick={() => handleImageClick(image.url)}
-                        />
-                      </Link>
+             
                       {/* overlay gradient */}
                       <div
                         className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0
@@ -126,18 +100,21 @@ const WorkSlider = () => {
                         className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl-translate-y-20
                       transition-all duration-300"
                       >
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          {/* title part 1 */}
-                          <div className="delay-100">LIVE</div>
-                          {/* title part 2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
+                        <Link href={image.url}>
+                          <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                            {/* title part 1 */}
+                            <div className="delay-100">LIVE</div>
+                            {/* title part 2 */}
+                            <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                              PROJECT
+                            </div>
+                            {/* icon */}
+
+                            <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                              <BsArrowRight />
+                            </div>
                           </div>
-                          {/* icon */}
-                          <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
-                            <BsArrowRight />
-                          </div>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
