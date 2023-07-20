@@ -3,23 +3,17 @@ import Image from "next/image";
 
 const Avatar = () => {
   return (
-    <div className="hidden xl:flex xl:max-w-none ">
-      <div className="w-full h-full  object-cover transform scaleX(-1) relative">
-        <Image
-          src={"/photo_5316634583317465224_x-removebg-preview.png"}
-          width={737}
-          height={678}
-          alt="avatar"
-          // className="translate-z-0 w-full h-full object-cover"
-        />
+    <div className="hidden xl:flex flex-col xl:max-w-none absolute ">
+      <div className="w-full h-full">
+        <Image src={"/mirror22.png"} width={737} height={678} alt="avatar" />
       </div>
-      <div className="w-full h-full absolute ">
+      <div className="w-70 h-full bg-gradient-to-t from-cyan-500 to-transparent-100 opacity-50 mix-blend-color-dodge">
         <Image
-          src={"/photo_5316634583317465224_x-removebg-preview.png"}
+          src={"/mirror11.png"}
           width={737}
           height={678}
           alt="avatar1"
-          style={{ transform: "scale(-1, -1)", opacity: 0.5 }}
+          // style={{ opacity: 0.5 }}
         />
       </div>
     </div>
