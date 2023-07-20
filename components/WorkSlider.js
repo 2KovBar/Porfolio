@@ -15,22 +15,22 @@ const WorkSlider = () => {
         images: [
           {
             title: "title",
-            path: "/thumb11.jpg",
+            path: "/work1.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
             title: "title",
-            path: "/thumb22.jpg",
+            path: "/work2.jpg",
             url: "https://oleksandrb93.github.io/weather/",
           },
           {
             title: "title",
-            path: "/thumb33.jpg",
+            path: "/work3.jpg",
             url: "https://chidorishar.github.io/Petly-Frontend",
           },
           {
             title: "title",
-            path: "/thumb44.jpg",
+            path: "/work4.jpg",
             url: "https://spotify-clone-red-chi.vercel.app/",
           },
         ],
@@ -39,23 +39,95 @@ const WorkSlider = () => {
         images: [
           {
             title: "title",
-            path: "/thumb5.jpg",
+            path: "/work5.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
             title: "title",
-            path: "/thumb6.jpg",
+            path: "/work6.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
             title: "title",
-            path: "/thumb2.jpg",
+            path: "/work7.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
           },
           {
             title: "title",
-            path: "/thumb3.jpg",
+            path: "/work9.jpg",
             url: "https://oleksandrb93.github.io/react-movie/",
+          },
+        ],
+      },
+      {
+        images: [
+          {
+            title: "title",
+            path: "/work8.jpg",
+            url: "https://oleksandrb93.github.io/react-movie/",
+          },
+          {
+            title: "title",
+            path: "/work10.jpg",
+            url: "https://oleksandrb93.github.io/weather/",
+          },
+          {
+            title: "title",
+            path: "/work11.jpg",
+            url: "https://chidorishar.github.io/Petly-Frontend",
+          },
+          {
+            title: "title",
+            path: "/work12.jpg",
+            url: "https://spotify-clone-red-chi.vercel.app/",
+          },
+        ],
+      },
+      {
+        images: [
+          {
+            title: "title",
+            path: "/work13.jpg",
+            url: "https://oleksandrb93.github.io/react-movie/",
+          },
+          {
+            title: "title",
+            path: "/work14.jpg",
+            url: "https://oleksandrb93.github.io/weather/",
+          },
+          {
+            title: "title",
+            path: "/work15.jpg",
+            url: "https://chidorishar.github.io/Petly-Frontend",
+          },
+          {
+            title: "title",
+            path: "/work16.jpg",
+            url: "https://spotify-clone-red-chi.vercel.app/",
+          },
+        ],
+      },
+      {
+        images: [
+          {
+            title: "title",
+            path: "/work17.jpg",
+            url: "https://oleksandrb93.github.io/react-movie/",
+          },
+          {
+            title: "title",
+            path: "/work1.jpg",
+            url: "https://oleksandrb93.github.io/weather/",
+          },
+          {
+            title: "title",
+            path: "/work13.jpg",
+            url: "https://chidorishar.github.io/Petly-Frontend",
+          },
+          {
+            title: "title",
+            path: "/work7.jpg",
+            url: "https://spotify-clone-red-chi.vercel.app/",
           },
         ],
       },
@@ -74,14 +146,14 @@ const WorkSlider = () => {
       {workSlider.slides.map((slide, slideIndex) => {
         return (
           <SwiperSlide key={slideIndex}>
-            <div className="grid grid-cols-2 grid-rows-1 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-4 gap-4 cursor-pointer">
               {slide.images.map((image, imageIndex) => {
                 return (
                   <div
                     key={imageIndex}
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group border border-[red] rounded-[10px]"
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group">
+                    <div className="flex items-center justify-center relative overflow-hidden group h-full">
                       <Image
                         src={image.path}
                         width={450}
