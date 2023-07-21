@@ -16,22 +16,22 @@ const WorkSlider = () => {
           {
             title: "title",
             path: "/work1.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work2.jpg",
-            url: "https://oleksandrb93.github.io/weather/",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work3.jpg",
-            url: "https://chidorishar.github.io/Petly-Frontend",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work4.jpg",
-            url: "https://spotify-clone-red-chi.vercel.app/",
+            url: "https://www.behance.net/lilith_a",
           },
         ],
       },
@@ -40,7 +40,7 @@ const WorkSlider = () => {
           {
             title: "title",
             path: "/work5.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
@@ -50,12 +50,12 @@ const WorkSlider = () => {
           {
             title: "title",
             path: "/work7.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://oleksandrb93.github.io/weather/",
           },
           {
             title: "title",
             path: "/work9.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://spotify-clone-red-chi.vercel.app/",
           },
         ],
       },
@@ -64,22 +64,22 @@ const WorkSlider = () => {
           {
             title: "title",
             path: "/work8.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://chidorishar.github.io/Petly-Frontend/",
           },
           {
             title: "title",
             path: "/work10.jpg",
-            url: "https://oleksandrb93.github.io/weather/",
+            url: "https://vitalinakovbasiuk.github.io/IceCreamPassion/",
           },
           {
             title: "title",
             path: "/work11.jpg",
-            url: "https://chidorishar.github.io/Petly-Frontend",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work12.jpg",
-            url: "https://spotify-clone-red-chi.vercel.app/",
+            url: "https://www.behance.net/lilith_a",
           },
         ],
       },
@@ -88,22 +88,22 @@ const WorkSlider = () => {
           {
             title: "title",
             path: "/work13.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work14.jpg",
-            url: "https://oleksandrb93.github.io/weather/",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work15.jpg",
-            url: "https://chidorishar.github.io/Petly-Frontend",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
             path: "/work16.jpg",
-            url: "https://spotify-clone-red-chi.vercel.app/",
+            url: "https://oleksandrb93.github.io/react-movie/",
           },
         ],
       },
@@ -112,7 +112,7 @@ const WorkSlider = () => {
           {
             title: "title",
             path: "/work17.jpg",
-            url: "https://oleksandrb93.github.io/react-movie/",
+            url: "https://www.behance.net/lilith_a",
           },
           {
             title: "title",
@@ -141,7 +141,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[320px] sm:h-[510px] mt-4"
+      className="h-[280px] sm:h-[510px] mt-4"
     >
       {workSlider.slides.map((slide, slideIndex) => {
         return (
@@ -151,9 +151,9 @@ const WorkSlider = () => {
                 return (
                   <div
                     key={imageIndex}
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center "
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group "
                   >
-                    <div className="h-[160px] sm:h-[200px] flex items-center justify-center relative object-cover overflow-hidden border border-[red] rounded-[10px]">
+                    <div className="h-[160px] sm:h-[200px] flex items-center justify-center relative object-cover overflow-hidden group border border-[red] rounded-[10px]">
                       <Image
                         src={image.path}
                         width={450}
