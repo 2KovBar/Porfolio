@@ -141,25 +141,26 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[510px]"
+      className="h-[320px] sm:h-[510px] mt-4"
     >
       {workSlider.slides.map((slide, slideIndex) => {
         return (
           <SwiperSlide key={slideIndex}>
-            <div className="grid grid-cols-2 grid-rows-4 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-1 gap-4 cursor-pointer ">
               {slide.images.map((image, imageIndex) => {
                 return (
                   <div
                     key={imageIndex}
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group border border-[red] rounded-[10px]"
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center "
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group h-full">
+                    <div className="h-[160px] sm:h-[200px] flex items-center justify-center relative object-cover overflow-hidden border border-[red] rounded-[10px]">
                       <Image
                         src={image.path}
                         width={450}
-                        height={380}
+                        height={200}
                         alt=""
                         priority={true}
+                        className="object-cover h-full"
                       />
                       {/* overlay gradient */}
                       <div
