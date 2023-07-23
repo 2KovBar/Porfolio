@@ -116,13 +116,13 @@ const WorkSlider = () => {
           },
           {
             title: "title",
-            path: "/work1.jpg",
-            url: "https://oleksandrb93.github.io/weather/",
+            path: "/work18.jpg",
+            url: "https://netflix-nextjs-peach.vercel.app/",
           },
           {
             title: "title",
-            path: "/work13.jpg",
-            url: "https://chidorishar.github.io/Petly-Frontend",
+            path: "/work19.jpg",
+            url: "https://vibropress.net/",
           },
           {
             title: "title",
