@@ -39,7 +39,12 @@ const SocialLink = ({ icon, links }) => {
   };
 
   return (
-    <div className="relative" onMouseLeave={handleMouseLeave}>
+    <div
+      className={`relative ${
+        isDropdownOpen ? "lg:relative" : "lg:hover:relative"
+      }`}
+      onMouseLeave={handleMouseLeave}
+    >
       <button
         className="hover:text-accent transition-all duration-300"
         onClick={handleDropdownToggle}
