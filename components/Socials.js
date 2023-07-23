@@ -20,7 +20,6 @@
 // };
 
 // export default Socials;
-
 import React, { useState } from "react";
 import { RiGithubLine, RiTelegramLine, RiLinkedinLine } from "react-icons/ri";
 
@@ -31,36 +30,34 @@ const SocialLink = ({ icon, links }) => {
     setIsDropdownOpen((prevState) => !prevState);
   };
 
-  const handleDropdownBlur = () => {
-    setIsDropdownOpen(false);
-  };
-
-  const handleFocus = () => {
+  const handleMouseEnter = () => {
     setIsDropdownOpen(true);
   };
 
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+  };
+
   return (
-    <div className="relative" onMouseLeave={handleDropdownBlur}>
+    <div className="relative" onMouseLeave={handleMouseLeave}>
       <button
         className="hover:text-accent transition-all duration-300"
         onClick={handleDropdownToggle}
-        onBlur={handleDropdownBlur}
-        onFocus={handleFocus}
+        onMouseEnter={handleMouseEnter}
       >
         {icon}
       </button>
       {isDropdownOpen && (
         <div className="absolute top-8 left-0 bg-transparent p-2 rounded shadow box-border h-54 w-54 ">
-          {links.map((link, index) => (
+          {links.map((link) => (
             <a
-              key={index}
+              key={link.label}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
               className="block text-white text-[16px] hover:text-accent"
             >
               {link.label}
-              {/* {icon} */}
             </a>
           ))}
         </div>
