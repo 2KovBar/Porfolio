@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-// import "swiper/css";
-// import "swiper/css/free-mode";
-// import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import Link from "next/link";
 import Image from "next/image";
@@ -141,7 +141,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[420px] md:h-[510px] mt-4"
+      className="h-[420px] md:h-[510px] md:w-[650px] lg:w-full mt-4"
     >
       {workSlider.slides.map((slide, slideIndex) => {
         return (

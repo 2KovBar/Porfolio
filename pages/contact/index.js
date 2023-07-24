@@ -98,7 +98,8 @@ const Contact = () => {
                 name="name"
                 value={form.name}
                 placeholder="name"
-                className="input"
+                className="input required"
+                required
               />
               <input
                 onChange={handleChange}
@@ -106,7 +107,8 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 placeholder="email"
-                className="input"
+                className="input required"
+                required
               />
             </div>
             <input
@@ -115,14 +117,16 @@ const Contact = () => {
               name="subject"
               value={form.subject}
               placeholder="subject"
-              className="input"
+              className="input required"
+              required
             />
             <textarea
               onChange={handleChange}
               name="message"
               value={form.message}
               placeholder="message"
-              className="textarea"
+              className="textarea required"
+              required
             ></textarea>
             <button
               type="submit"
