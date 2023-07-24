@@ -9,7 +9,7 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full overflow-y-auto bg-primary/30 md:py-36  flex items-center">
+    <div className="h-full bg-primary/30 pt-40 md:py-36  flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -29,7 +29,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-xs  md:text-lg"
             >
               Our portfolio showcases a diverse range of projects we have
               successfully completed for our clients. Each project represents

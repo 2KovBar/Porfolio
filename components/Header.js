@@ -26,9 +26,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="">
       <header
-        className={`absolute z-30 bg-zinc-700/40 backdrop-blur-[1px] w-full flex items-center justify-center py-0 px-16 xl:px-0 ${
+        className={`absolute z-30 pt-2 bg-zinc-700/40 backdrop-blur-[1px] md:backdrop-blur-0 md:bg-zinc-100/0  w-full flex items-center justify-center py-0 px-16 xl:px-0 ${
           navbar ? "h-[50px]" : "h-[70px]"
         }`}
       >
@@ -47,7 +46,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </div>
   );
 };
 

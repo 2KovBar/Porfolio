@@ -141,7 +141,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[340px] sm:h-[510px] mt-4"
+      className="h-[420px] md:h-[510px] mt-4"
     >
       {workSlider.slides.map((slide, slideIndex) => {
         return (
@@ -153,10 +153,10 @@ const WorkSlider = () => {
                     key={imageIndex}
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group "
                   >
-                    <div className="h-[160px] sm:h-[200px] flex items-center justify-center relative object-cover overflow-hidden group border border-[red] rounded-[10px]">
+                    <div className="h-[160px] sm:h-[200px] w-[380px] flex items-center justify-center relative object-cover overflow-hidden group border border-[red] rounded-[10px]">
                       <Image
                         src={image.path}
-                        width={450}
+                        width={400}
                         height={200}
                         alt=""
                         priority={true}
