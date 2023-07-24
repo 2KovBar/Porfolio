@@ -11,30 +11,28 @@ import {
 // data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Adobe Photoshop, Adobe Illustrator, Adobe XD,Sketch, Figma, InVision, Canva, Blender 3D, Spine 3D, Spline 2D.",
   },
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Visual Studio Code, GitHub, React, Node.js, React Redux, HTML, CSS, SASS, Bootstrap, Webpack, Parcel, Vue.js, TypeScript, MySQL.",
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Image, Mobile, Content Optimization, Links and Internal Linking, Page Load Speed, Analytics and Tracking Security Provision, URLs.",
   },
+  // {
+  //   icon: <RxCrop />,
+  //   title: "Branding",
+  //   description: "Adobe Photoshop, Adobe Illustrator.",
+  // },
 ];
 
 import { Swiper, SwiperSlide } from "swiper/react";
