@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import {
   HiHome,
   HiUser,
@@ -32,8 +34,26 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Nav = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    const handleStart = () => setIsLoading(true);
+    const handleComplete = () => setIsLoading(false);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  }, [router]);
+
   const pathname = router.pathname;
+
   return (
     <nav
       className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto
@@ -58,10 +78,7 @@ const Nav = () => {
                   <div className="text-[12px] leading-none font-semibold capitalize">
                     {link.name}
                   </div>
-                  <div
-                    className="border-solid border-l-white border-l-8 border-y-transparent
-                               border-y-[6px] border-r-0 absolute -right-2"
-                  ></div>
+                  <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
                 </div>
               </div>
               <div>{link.icon}</div>
