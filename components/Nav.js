@@ -57,7 +57,7 @@ const Nav = () => {
   return (
     <nav
       className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto
-                  xl:right-[2%] z-50 top-0 w-full xl:w-16 xl-max-md  xl:h-screen"
+                  xl:right-[2%] z-50 top-0 w-full xl:w-16 xl-max-md  xl:h-screen bg-zinc-700/40 backdrop-blur-[1px] md:backdrop-blur-0 md:bg-zinc-100/0"
     >
       <div
         className="flex w-full xl:flex-col items-center 

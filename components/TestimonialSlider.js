@@ -42,7 +42,7 @@ const TestimonialSlider = () => {
         clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className="h-[400px]"
+      className="h-[700px] overflow-y-auto"
     >
       {testimonialData.map((person, index) => {
         return (
@@ -74,7 +74,7 @@ const TestimonialSlider = () => {
                   <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
                 </div>
                 {/* mesage */}
-                <div className="xl:text-lg text-center md:text-left">
+                <div className="text-center md:text-left text-xs md:text-sm xl:text-lg">
                   {person.message}
                 </div>
               </div>
