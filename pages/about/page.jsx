@@ -7,6 +7,7 @@ import {
   SiAdobephotoshop,
 } from "react-icons/si";
 import { FaWordpress } from "react-icons/fa";
+
 const aboutData = [
   {
     title: "skills",
