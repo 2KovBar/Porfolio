@@ -41,8 +41,8 @@ const TestimonialSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Navigation, Pagination]}
-      className="h-[700px]"
+      modules={[Navigation]}
+      className="h-[400px]"
     >
       {testimonialData.map((person, index) => {
         return (
@@ -65,9 +65,9 @@ const TestimonialSlider = () => {
               </div>
               {/* quate & message */}
               <div
-                className="flex-1 flex flex-col justify-center before:w-[1px]
+                className="flex-1 flex flex-col justify-start before:w-[1px]
                  xl:before:bg-white/20 xl:before:absolute xl:before:left-0
-                   xl:before:h-[200px] relative xl:pl-20"
+                   xl:before:h-[100%] relative xl:pl-20"
               >
                 {/* quote icon */}
                 <div className="mb-4">
