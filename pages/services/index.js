@@ -28,7 +28,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 md:max-lg max-w-[400px] mx-auto lg:mx-0"
             >
               As a designer and developers, We understand the perfect user
               interface should look good and work even better. Alongside our

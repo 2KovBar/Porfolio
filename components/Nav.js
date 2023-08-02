@@ -62,14 +62,14 @@ const Nav = () => {
       <div
         className="flex w-full xl:flex-col items-center 
                   justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8
-                  bg-red-200/10 backdrop:blur-sm text-3xl xl:text-xl xl:rounded-full"
+                  bg-primary/60 backdrop:blur-sm text-3xl xl:text-xl xl:rounded-full"
       >
         {navData.map((link, index) => {
           return (
             <Link
               className={`${
-                link.path === pathname && "text-accent"
-              } relative flex items-center group hover:text-accent transition-all duration-300`}
+                link.path === pathname && "text-violet-500"
+              } relative flex items-center group hover:text-violet-500 transition-all duration-300`}
               key={index}
               href={link.path}
             >
@@ -81,7 +81,9 @@ const Nav = () => {
                   <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
                 </div>
               </div>
-              <div>{link.icon}</div>
+              <div
+              className="p-3 rounded-2xl"
+              >{link.icon}</div>
             </Link>
           );
         })}

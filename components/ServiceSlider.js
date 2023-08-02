@@ -66,7 +66,7 @@ const ServiceSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div
-              className="bg-[rgba(65,47,123,0.20)] rounded-lg px-6 py-8 flex h-[320px]
+              className="bg-[rgba(65,47,123,0.20)] rounded-lg px-6 py-8 flex h-[320px] md:max-xl:text-sm
              sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer  hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300"
             >
               {/* icon */}
