@@ -8,7 +8,7 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className=" bg-primary/30 md:py-32  md:flex md:items-center overflow-y-auto md:overflow-hidden py-32 max-h-full">
+    <div className=" bg-primary/30 md:pt-32  md:flex md:items-center overflow-y-auto md:overflow-auto py-32 h-full">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -19,7 +19,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2"
+              className="h2 md:max-xl:mt-64 "
             >
               Examples of our <span className="text-accent"> work.</span>
             </motion.h2>
@@ -28,7 +28,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-xs  md:text-lg"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-xs md:max-w-full md:text-lg"
             >
               Our portfolio showcases a diverse range of projects we have
               successfully completed for our clients. Each project represents
