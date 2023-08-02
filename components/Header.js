@@ -19,7 +19,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavbar);
-    console.log(navbar);
     return () => {
       window.removeEventListener("scroll", changeNavbar);
     };
@@ -27,7 +26,7 @@ const Header = () => {
 
   return (
       <header
-        className={`absolute z-30 pt-2 bg-zinc-700/40 backdrop-blur-[1px] md:backdrop-blur-0 md:bg-zinc-100/0  w-full flex items-center justify-center py-0 px-16 xl:px-0 ${
+        className={`absolute z-30 py-2 bg-zinc-700/40 backdrop-blur-[1px] md:backdrop-blur-0 md:bg-zinc-100/0  w-full flex items-center justify-center px-16 xl:px-0 ${
           navbar ? "h-[50px]" : "h-[70px]"
         }`}
       >

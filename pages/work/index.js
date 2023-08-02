@@ -1,6 +1,5 @@
 //components
 import WorkSlider from "../../components/WorkSlider";
-import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 //framer motion
@@ -9,7 +8,7 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-auto bg-primary/30 py-32  flex items-center">
+    <div className=" bg-primary/30 md:py-32  md:flex md:items-center overflow-y-auto md:overflow-hidden py-32 max-h-full">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

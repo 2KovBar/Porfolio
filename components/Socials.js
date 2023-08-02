@@ -77,36 +77,36 @@ const Socials = () => {
       icon: <RiGithubLine />,
       links: [
         { label: "Vitalina", url: "https://github.com/VitalinaKovbasiuk" },
-        { label: "Oleksandr", url: "https://github.com/OleksandrB93" },
         { label: "Alona", url: "https://www.behance.net/lilith_a" },
+        { label: "Oleksandr", url: "https://github.com/OleksandrB93" },
       ],
     },
     {
       icon: <RiTelegramLine />,
       links: [
+        { label: "Vitalina", url: "https://t.me/Vitalina_Kovbasiuk" },
         { label: "Alona", url: "https://t.me/aa_lilith" },
         { label: "Oleksandr", url: "https://t.me/Oleksandr_Barabash" },
-        { label: "Vitalina", url: "https://t.me/Vitalina_Kovbasiuk" },
       ],
     },
     {
       icon: <RiLinkedinLine />,
       links: [
-        {
-          label: "Oleksandr",
-          url: "https://www.linkedin.com/in/olexandr-barabash-034812139/",
-        },
         { label: "Vitalina", url: "https://www.linkedin.com/in/vitalina/" },
         {
           label: "Alona",
           url: "https://www.linkedin.com/in/alyona-kyrylenko-lilith",
+        },
+        {
+          label: "Oleksandr",
+          url: "https://www.linkedin.com/in/olexandr-barabash-034812139/",
         },
       ],
     },
   ];
 
   return (
-    <div className="flex items-center gap-x-5 text-[24px] text-center">
+    <div className="flex items-center justify-center pt-3 gap-x-5 text-[24px] text-center">
       {socialLinks.map((socialLink, index) => (
         <SocialLink
           key={index}
